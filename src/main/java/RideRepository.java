@@ -32,4 +32,8 @@ public class RideRepository {
         this.totalDistance = totalDistance;
         this.totalRidesDuration = totalRidesDuration;
     }
+
+    public double getTotalRideDuration() {
+        return getTotalRidesDuration();
+    }
 }
