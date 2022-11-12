@@ -1,20 +1,14 @@
 public class RideRepository {
-    int costPerMin;
-    double totalDistance;
-    double totalFare;
+   int id;
+   double totalDistance;
+   double totalRidesDuration;
 
-    public RideRepository(int costPerMin, double totalDistance, double totalFare) {
-        this.costPerMin = costPerMin;
-        this.totalDistance = totalDistance;
-        this.totalFare = totalFare;
+    public int getId() {
+        return id;
     }
 
-    public int getCostPerMin() {
-        return costPerMin;
-    }
-
-    public void setCostPerMin(int costPerMin) {
-        this.costPerMin = costPerMin;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public double getTotalDistance() {
@@ -25,15 +19,17 @@ public class RideRepository {
         this.totalDistance = totalDistance;
     }
 
-    public double getTotalFare() {
-        return totalFare;
+    public double getTotalRidesDuration() {
+        return totalRidesDuration;
     }
 
-    public void setTotalFare(double totalFare) {
-        this.totalFare = totalFare;
+    public void setTotalRidesDuration(double totalRidesDuration) {
+        this.totalRidesDuration = totalRidesDuration;
     }
 
-    public Object getTotalRideDuration() {
-        return getTotalRideDuration();
+    public RideRepository(int id, double totalDistance, double totalRidesDuration) {
+        this.id = id;
+        this.totalDistance = totalDistance;
+        this.totalRidesDuration = totalRidesDuration;
     }
 }
